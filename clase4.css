@@ -1,0 +1,37 @@
+/*0TR0*/
+body{
+    background-color: brown;
+    margin: 20%;
+    display: flex;
+    min-height: 100hv;
+}
+
+.caja{
+    margin: auto;
+    perspective: 700px;
+    perspective-origin: top;
+
+
+}
+
+.cara{
+    width: 200px;
+    height: 200px;
+    background-color: green;
+    transition: all 5s;
+    transform: rotateX(50deg);
+    transform-style: preserve-3d;
+}
+
+.cara1{
+    width: 200px;
+    height: 200px;
+    background-color: silver;
+    margin: auto;
+    transform: rotateY(96deg);
+
+}
+
+.cara1:hover{
+    transform: rotateY(960deg);
+}

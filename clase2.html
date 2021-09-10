@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--Formularios-->
+    <h1>Formularios</h1>
+
+    <!--bloque formulario-->
+    <form action="#" method="#">
+        <p>Ingrese su nombre: </p> 
+        <!--maxlength="10" limitar el numero de caracteres-->
+        <input type="text" maxlength="10" required>
+
+        <p>Ingrese su contraseña:</p>
+         <!--password: reemplaza los numeros y letras con puntos para seguridad-->
+        <input type="password"required>
+        <br>
+        <br>
+        <input type="submit">
+        <!--reset: reestablecer valores/borrar-->
+        <input type="reset">
+
+        <p>Escriba sus quejar y reclamos: </p>
+        <!--textarea: Pone una caja de texto para escribir lo que sea-->
+        <textarea name="" id="" cols="20" rows="10"></textarea>
+        <br>
+        <input type="submit">
+
+        <p>Ingrese su email:</p>
+        <input type="email"required>
+        <input type="submit">
+
+        <p>Fecha:</p>
+        <input type="date"><br>
+        <input type="range"> <!--Barra--> <br>
+        <p>Escoja un color: </p>
+        <input type="color"> <br>
+        <p>Escoja un numero: </p>
+        <input type="number" min="1" max="10"> <br>
+        <br>
+        <p>Escoja un color de las siguientes opciones: </p>
+        <input type="text" id="colores" list="mascolores">
+        <datalist id="mascolores">
+            <option id="" label="blanco" value="blanco"></option>
+            <option id="" label="rojo" value="rojo"></option>
+            <option value="rojo"></option>
+            <option value="verde"></option>
+        </datalist>
+
+        <br>
+        <input type="checkbox"> <br> <!--Cuadrado-->
+        <input type="radio"> <br> <!--Circulo-->
+        
+
+        <br>
+        <select name="nombre" id="">
+            <option value="Carlos">Carlos</option>
+            <option value="Marcela">Marcela</option>
+            <option value="Diana">Diana</option>
+            <option value="Gustabo">Gustavo</option>
+        </select>
+
+        <br><br>
+        <select name="nombre" multiple> <!--Seleccionar varias optciones multiple-->
+            <option value="Carlos">Carlos</option>
+            <option value="Marcela">Marcela</option>
+            <option value="Diana">Diana</option>
+            <option value="Gustabo">Gustavo</option>
+        </select>
+
+        <br><br>
+        <select name="nombre" multiple> 
+            <optgroup label="frutas">
+                <option value="Fresa">Fresa</option>
+                <option value="Mando">Mando</option>
+                <option value="Banana">Banana</option>
+            </optgroup>
+
+            <optgroup label="nombres">
+                <option value="Carlos">Carlos</option>
+                <option value="Marcela">Marcela</option>
+                <option value="Diana">Diana</option>
+                <option value="Gustabo">Gustavo</option>
+            </optgroup>
+        </select>
+
+        <br><br>
+        <p>Seleccione una imagen</p>
+        <input type="file">
+        <br>
+        <!-- controls para que se muestre pausa volumen, etc-->
+        <p>Mire el siguiente video</p>
+        <video src="a.mp4" controls></video>
+        <br>
+        <p>Escuche el siguiente audio</p>
+        <audio src="gallo.mp3" controls>
+            <source src="gallo.mp3" type="audio/..."> 
+        </audio>
+
+        <br>
+        <button type="submit">Enviar <img src="https://image.flaticon.com/icons/png/512/1033/1033956.png" 
+            width="20" heinght="20" alt=""></button>
+    </form>
+    <br>
+    <br>
+
+
+
+
+
+</body>
+</html>
